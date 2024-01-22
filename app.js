@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var StudentManager_1 = require("./StudentManager");
+var student_1 = require("./student");
+var studentManager = new StudentManager_1.StudentManager([], 0, 5);
+var student1 = new student_1.Student("Men", "Men@gmail.com");
+var student2 = new student_1.Student("Women", "Women@gmail.com");
+studentManager.insert(student1);
+studentManager.insert(student2);
+studentManager.showList();
